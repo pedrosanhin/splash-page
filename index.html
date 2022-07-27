@@ -203,6 +203,103 @@
 
   </footer>
 
+  <div class="pre-leasing__form">
+
+    <div>
+
+      <h1>Pre-leasing [Month] [Year]!</h1>
+
+    </div>
+
+    <form action="">
+      <div>
+
+        <label for="first_name">
+          <span>First Name <small>Req.</small></span>
+          <input type="text" name="first_name" id="first_name" autocomplete="name" required>
+        </label>
+        <label for="last_name">
+          <span>Last Name <small>Req.</small></span>
+          <input type="text" name="last_name" id="last_name" autocomplete="name" required>
+        </label>
+        <label for="client_email">
+          <span>Email <small>Req.</small></span>
+          <input type="email" name="client_email" id="client_email" autocomplete="email" required>
+        </label>
+        <label for="phone">
+          <span>Phone <small>Req.</small></span>
+          <input type="tel" name="phone" id="phone" required pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+        </label>
+
+      </div>
+
+      <div>
+
+        <label for="im-a">
+          <span>I Am A...</span>
+          <select class="pre-leasing__form-combo">
+            <option value="Select">Select an option</option>
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+            <option value="3">Option 3</option>
+            <option value="4">Option 4</option>
+          </select>
+        </label>
+
+        <label for="i-heard-about">
+          <span>I Heard About You...</span>
+          <select class="pre-leasing__form-combo">
+            <option value="Select">Select an option</option>
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+            <option value="3">Option 3</option>
+            <option value="4">Option 4</option>
+          </select>
+        </label>
+
+      </div>
+
+      <div>
+
+        <label for="bedroom-count">
+          <span>Bedroom Count</span>
+          <select class="pre-leasing__form-combo">
+            <option value="Select">Select a floor plan</option>
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+            <option value="3">Option 3</option>
+            <option value="4">Option 4</option>
+          </select>
+        </label>
+
+        <label for="move-in-date">
+          <span>Move-In Date</span>
+          <select class="pre-leasing__form-combo">
+            <option value="Select">Select a date range</option>
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+            <option value="3">Option 3</option>
+            <option value="4">Option 4</option>
+          </select>
+        </label>
+
+        <label for="bring-a-pet">
+          <span>Do you plan to bring a pet?</span>
+          <div>
+            <input type="radio" id="yes" name="bring-a-pet" value="YES">
+            <label for="yes">Yes</label><br>
+            <input type="radio" id="no" name="bring-a-pet" value="NO">
+            <label for="no">No</label><br>
+          </div>
+        </label>
+      </div>
+
+      <input type="submit" value="Join The Interest List">
+    </form>
+
+  </div>
+
+
 </body>
 
 </html>
