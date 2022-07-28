@@ -1,0 +1,118 @@
+:root {
+  --primary-color: #FFF;
+  --background-color: #E5E5E5;
+  --content2: #616366;
+  --content1: #222426;
+  --brand-color: #1160E9;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: poppins, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  background-color: var(--background-color);
+}
+
+header {
+  height: 15vh;
+  background-color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.logo {
+  margin: 0.2rem;
+  padding: 0.3rem;
+}
+
+/* For mobile first approach */
+nav {
+  width: 100%;
+  visibility: hidden;
+}
+
+.main-nav {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: revert;
+}
+
+.main-nav__item {
+  list-style: none;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.main-nav__item a {
+  color: var(--content2);
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.main-nav__item a:hover {
+  color: var(--content1);
+}
+
+.main-nav__item a:focus {
+  color: var(--content1);
+  border-radius: 2px;
+  border: 2px solid var(--content1);
+}
+
+button {
+  background-color: var(--brand-color);
+  border-radius: 2px;
+
+  color: white;
+  padding: 16px 24px;
+  border: none;
+}
+
+@media screen and (min-width:600px) {
+  nav {
+    width: 100%;
+    visibility: visible;
+  }
+}
+
+@media screen and (min-width:800px) {
+  header {
+    flex-direction: row;
+  }
+
+  h1 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .main-nav {
+    justify-content: flex-end;
+  }
+
+  .main-nav__item {
+    margin: 0 1rem;
+  }
+}
